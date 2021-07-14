@@ -1,0 +1,39 @@
+body {
+  background-image: url("https://leisurelylifestyle.com/wp-content/uploads/2019/07/Kilkenny-Castle-Ireland.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-style: oblique;
+  color: blueviolet;
+  word-wrap: normal;
+  font-size: 2em;
+  list-style: disc;
+  margin: 1rem;
+  background-color: beige;
+  border-color: bisque;
+  text-align: justify;
+}
+
+ul { list-style: disc;
+  margin: 2rem;
+  font-style: oblique;
+  font-size: 1em;
+  color:blueviolet;
+  background-color: beige;
+  text-align: justify
+
+}
+
+h1 {
+  font-style: oblique;
+  color: blueviolet;
+  word-wrap: normal;
+  font-size: 2em;
+  list-style: disc;
+  margin: 1rem;
+  background-color: beige;
+  border-color: bisque;
+  text-align: center;
+}
