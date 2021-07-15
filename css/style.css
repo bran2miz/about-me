@@ -4,36 +4,45 @@ body {
   background-size: cover;
 }
 
-p {
-  font-style: oblique;
-  color: blueviolet;
-  word-wrap: normal;
-  font-size: 2em;
-  list-style: disc;
-  margin: 1rem;
-  background-color: beige;
-  border-color: bisque;
-  text-align: justify;
-}
-
-ul { list-style: disc;
-  margin: 2rem;
-  font-style: oblique;
-  font-size: 1em;
-  color:blueviolet;
-  background-color: beige;
-  text-align: justify
-
-}
-
 h1 {
   font-style: oblique;
   color: blueviolet;
   word-wrap: normal;
-  font-size: 2em;
+  font-size: 4em;
   list-style: disc;
   margin: 1rem;
   background-color: beige;
-  border-color: bisque;
+  border-color:cadetblue;
   text-align: center;
+  border-style: outset;
+  border-width: thick;
+}
+
+p {
+  font-style: oblique;
+  color: blueviolet;
+  word-wrap: normal;
+  font-size: 30px;
+  list-style: disc;
+  margin: 2rem;
+  background-color: beige;
+  border-color: cadetblue;
+  text-align: justify;
+  border-style: outset;
+  border-width: thick;
+  padding: 10px 10px 10px 10px;
+}
+
+ul { list-style: disc;
+  margin: 3rem;
+  font-style: oblique;
+  font-size: 1em;
+  color:darkgrey;
+  background-color: beige;
+  text-align: justify;
+  padding: 10px 10px 10px 10px;
+}
+
+#scrollbar {
+  overflow: auto;
 }
