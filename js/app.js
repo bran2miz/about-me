@@ -1,4 +1,4 @@
-'use strict';
+ 'use strict';
 
 // The user's name from the greeting!
 let username= prompt('Might I inquire your name?');
@@ -62,7 +62,7 @@ if (answerFour === 'yes' || answerFour === 'y' || answerFour === 'ya') {
 }
 
 else if (answerFour === 'no' || answerFour === 'n') {
-  alert('Incorrect! You are having bad luck with these questions...aren\'t\ you?')
+  alert('Incorrect! You are having bad luck with these questions...aren\'t\ you?');
 }
 
 else {
@@ -78,11 +78,105 @@ if (answerFive === 'yes' || answerFive === 'y' || answerFive === 'ya') {
 }
 
 else if (answerFour === 'no' || answerFour === 'n') {
-  alert('You did not like the game...Fine! I won\'t\ curse you, but I will make sure that you enjoy my next game!')
+  alert('You did not like the game...Fine! I won\'t\ curse you, but I will make sure that you enjoy my next game!');
 }
 
 else {
   alert('This is the end of the game! Please enter a viable answer! \'yes\' or \'no\'!')
 }
 
-// console.log('user replied to question 5 with: ' + answerFive');
+console.log('user replied to question 5 with: ' + answerFive');
+
+let correctAnswer = 7;
+let userGuess = +prompt('Fortune Teller: I Am Thinking of a Number Between 1-10. Please Enter Your Guess Should You Dare...');
+
+let guessAttempts = 3;
+let attempts = 3;
+
+while (guessAttempts) {
+  for (let i = 0; i < attempts; i++){
+    console.log(`i: ${i}`);
+    console.log(`gueessAttempts: ${guessAttempts}`);
+    if (userGuess === correctAnswer){
+      guessAttempts = 0;
+      alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
+      break;
+    }
+    else if (userGuess < correctAnswer){
+      alert(`Fortune Teller: Hmm..no..too low..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
+      userGuess = +prompt(`Please enter another number`);
+    }
+    else if (userGuess > correctAnswer){
+      userGuess = +prompt(`Can you try another number?`);
+      alert(`Fortune Teller: Hmm..your number is too great..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
+    }
+    guessAttempts--;
+    if (guessAttempts === 0 && userGuess !== correctAnswer){
+      alert(`Fortune Teller: The correct answer was ` + correctAnswer);
+    }
+    else if (userGuess === correctAnswer) {
+      alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
+    }
+  }}
+
+let favDestination = ['Paris', 'Barcelona', 'Cabo', 'Antwerp', 'Vienna'];
+let favWorld = prompt('What is one of my favorite destinations to visit?');
+let attemptedGuess = 5;
+
+While (attemptedGuess) {
+  for (let i = 0; i < attemptedGuess.length; i++) {
+    if (favWorld === favDestination[i]) {
+      attemptedGuess = 0;
+      alert(`You are Correct!`);
+      break;
+    }
+    else if (favWorld !== favDestination[i]){
+      alert(`That is not one of my favorite places to travel. You have ${attemptedGuess} attempts remaining.`)
+      userAnswer = prompt(`Can you try another destination?`);
+    }
+    attemptedGuess--;
+    if (attemptedGuess === 0 && favWorld !== favDestination[i]) {
+      alert(`My favorite colors are: ` + favDestination);
+    }
+    else if (userAnswer= favDestination[i]){alert(`You Got it!!`);
+  }
+
+  }
+}}
+
+let favDestination = [`paris`, `barcelona`, `cabo`];
+let favWorld = prompt('What is one of my favorite destinations to visit?');
+
+let guessUser = 5;
+
+while (guessUser) {
+  for (let i = 0; i < guessUser; i++){
+    if (favWorld === favDestination[i]){
+      guessUser = 0;
+      alert(`You're right!`);
+      break;
+    } 
+    else if (favWorld !== favDestination[i]){
+      
+      alert(`That is not one of my favorite colors. You have ${guessUser} attempts remaining.`);
+      favWorld = prompt(`Can you try another color?`);
+    }
+    guessUser--;
+    if (guessUser === 0 && favWorld !== favDestination[i]){
+      alert('My favorite colors are: ' + favDestination);
+    }
+    else if (favWorld === favDestination[i]){
+      alert('Wahooo!! You got it!');
+    }
+  }
+}
+
+let buildAnswers = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
+
+const output = [];
+
+myAnswers.forEach(currentQuestion, questionNumber) => {
+  const answers = [];
+
+  for 
+}

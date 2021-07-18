@@ -38,30 +38,38 @@ h1 {
   border-width: thick;
   padding: 10px 10px 10px 10px;
   height: 200px;
+  clear: both;
 }
 
 .secondsection {
   font-style: oblique;
   color: blueviolet;
   font-size: 30px;
-  margin: 5rem;
+  margin: 4rem;
+  width: max-content;
   background-color: beige;
   border-color: cadetblue;
-  text-align: center;
   border-style: outset;
   border-width: thick;
   padding: 10px 10px 10px 10px;
   height: 100%;
   list-style: decimal;
+  align-items: center;
+  clear: both;
+  text-align: center;
 }
 
 .destination {
   list-style-type: decimal;
   list-style-position: inherit;
+  width: max-content;
+  margin: 3rem;
+  clear: both;
 }
 
 li {
   text-align: center;
+  width: max-content;
 }
 
 .aboutme { list-style: disc;
@@ -72,10 +80,9 @@ li {
   background-color: beige;
   text-align: justify;
   padding: 10px 10px 10px 10px;
+  clear: both;
 }
 
-.destination {
-  text-align: justify;
-  margin: 2rem;
-
+h2 {
+  text-align: center;
 }
