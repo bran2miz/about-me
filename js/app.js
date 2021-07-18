@@ -85,7 +85,7 @@ else {
   alert('This is the end of the game! Please enter a viable answer! \'yes\' or \'no\'!')
 }
 
-console.log('user replied to question 5 with: ' + answerFive');
+//console.log('user replied to question 5 with: ' + answerFive');
 
 let correctAnswer = 7;
 let userGuess = +prompt('Fortune Teller: I Am Thinking of a Number Between 1-10. Please Enter Your Guess Should You Dare...');
