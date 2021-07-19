@@ -1,16 +1,19 @@
- `use strict`;
+//  `use strict`;
 
-// The user's name from the greeting!
-let username= prompt(`Might I inquire your name?`);
+let correctAnswers= 0;
 
-// Greet the user
-alert('Hello ' + username);
+// // The user's name from the greeting!
+// let username= prompt(`Might I inquire your name?`);
+
+// // Greet the user
+// alert('Hello ' + username);
 
 let answerOne = prompt(`Welcome to this web page! Is this your first time on this page? Please reply with a yes or no`).toLowerCase();
 
 
 if (answerOne === `yes` || answerOne === `y` || answerOne === `ya`) {
   alert('Pray tell why you would journey back, mortal.');
+  correctAnswers++;
 }
 
 else if (answerOne === 'no' || answerOne === 'n') {
@@ -21,12 +24,13 @@ else {
   alert(`I am sorry, I could not quite catch that. Please respond with a yes or no!`);
 }
 
-// console.log('user replied to question 1 with: ' + answerOne');
+// // console.log('user replied to question 1 with: ' + answerOne');
 
 let answerTwo = prompt(`There is no turning back now. Our spooky Q&A begins here! Was the name of the killer in the film, Halloween, named Michael Myers? Mortal! Answer now with a yes or no`).toLowerCase();
 
 if (answerTwo === 'yes' || answerTwo === 'y' || answerTwo === `ya`) {
   alert(`Well, well. You are correct. Begginer luck I suppose.`);
+  correctAnswers++;
 }
 
 else if (answerTwo === `no` || answerTwo === `n`) {
@@ -37,12 +41,13 @@ else {
   alert('Mortal! Please enter a viable answer! yes or no!');
 }
 
-// console.log('user replied to question 2 with: ' + answerTwo');
+// // console.log('user replied to question 2 with: ' + answerTwo');
 
 let answerThree = prompt(`Hmm...that was just a warmup question. This is a bunch of hocus pocus... Speaking of which, mortal, did Bette Midler portray the character, Winifred Sanderson, in the movie, Hocus Pocus? Reply with yes or no`).toLowerCase();
 
 if (answerThree === `yes` || answerThree === `y` || answerThree === `ya`) {
-  alert(`Correct! Well, what do you know. Third time really is the charm`)
+  alert(`Correct! Well, what do you know. Third time really is the charm`);
+  correctAnswers++;
 }
 
 else if (answerThree === 'no' || answerThree === 'n') {
@@ -53,12 +58,13 @@ else {
   alert(`Mortal! Again, please enter a viable answer! yes or no!`);
 }
 
-// console.log('user replied to question 3 with: ' + answerThree');
+// // console.log('user replied to question 3 with: ' + answerThree');
 
 let answerFour = prompt(`Nearing the end of our questions. Halloween...Did this holiday originate in Ireland? Reply with yes or no`).toLowerCase();
 
 if (answerFour === `yes` || answerFour === `y` || answerFour === `ya`) {
   alert(`Correct! Im assuming you are well versed in all that is spooky and scary`);
+  correctAnswers++;
 }
 
 else if (answerFour === `no` || answerFour === `n`) {
@@ -69,12 +75,13 @@ else {
   alert(`Mortal! Please enter a viable answer! yes or no!`);
 }
 
-// console.log('user replied to question 4 with: ' + answerFour');
+// // console.log('user replied to question 4 with: ' + answerFour');
 
 let answerFive = prompt(`Well our questions end here with this last one. Answer wisely....Was this game enjoyable? Reply with yes or no`).toLowerCase();
 
 if (answerFive === `yes` || answerFive === `y` || answerFive === `ya`) {
   alert(`Phew! Mortal, I am glad I did not have to curse you! Thank you for answering correctly! Have a pleasant life! Goodbye for now....`);
+  correctAnswers++;
 }
 
 else if (answerFour === `no` || answerFour === `n`) {
@@ -85,7 +92,7 @@ else {
   alert(`This is the end of the game! Please enter a viable answer! yes or no!`);
 }
 
-//console.log('user replied to question 5 with: ' + answerFive');
+// //console.log('user replied to question 5 with: ' + answerFive');
 
 let correctAnswer = 7;
 let userGuess = +prompt('Fortune Teller: I Am Thinking of a Number Between 1-10. Please Enter Your Guess Should You Dare...');
@@ -116,13 +123,14 @@ while (guessAttempts) {
     }
     else if (userGuess === correctAnswer) {
       alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
+      correctAnswers++;
     }
   }}
 
 let favDestination = [`paris`, `barcelona`, `cabo`];
 let favWorld = prompt('What is one of my favorite destinations to visit?');
 
-let guessUser = 5;
+let guessUser = 6;
 
 while (guessUser) {
   for (let i = 0; i < guessUser; i++){
@@ -139,17 +147,19 @@ while (guessUser) {
     guessUser--;
     if (guessUser === 0 && favWorld !== favDestination[i]){
       alert('My favorite destinations are: ' + favDestination);
-    }
-    else if (favWorld === favDestination[i]){
-      alert('Wahooo!! You got it!');
+      correctAnswers++;
     }
   }
 }
 
-let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
-let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
-let rightAnswers= (allQuestions / answerKey);
-alert(`Your score for this quiz is` + rightAnswers);
+alert(`You got `  +correctAnswers + ` Correct!`);
+
+// let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
+// let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
+// let rightAnswers= (allQuestions / answerKey);
+// alert(`Your score for this quiz is` + rightAnswers);
+
+
 
 // let ouput = [];
 
