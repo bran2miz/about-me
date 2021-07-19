@@ -146,12 +146,15 @@ while (guessUser) {
   }
 }
 
-// let buildAnswers = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
+// let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
+// let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
+// let rightAnswers= (allQuestions / answerKey);
+// alert(`Your score for this quiz is` + rightAnswers);
 
-// const output = [];
+// let ouput = [];
 
-// myAnswers.forEach(currentQuestion, questionNumber) = {
-//   const answers = [];
+// let answers;
 
-//   for 
+// for(let i = 0; i< questions.length; i++){
+
 // }
