@@ -107,6 +107,7 @@ while (guessAttempts) {
     if (userGuess === correctAnswer){
       guessAttempts = 0;
       alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
+      correctAnswers++;
       break;
     }
     else if (userGuess < correctAnswer){
@@ -137,6 +138,7 @@ while (guessUser) {
     if (favWorld === favDestination[i]){
       guessUser = 0;
       alert(`You're right!`);
+      correctAnswers++;
       break;
     } 
     else if (favWorld !== favDestination[i]){
@@ -147,12 +149,11 @@ while (guessUser) {
     guessUser--;
     if (guessUser === 0 && favWorld !== favDestination[i]){
       alert('My favorite destinations are: ' + favDestination);
-      correctAnswers++;
     }
   }
 }
 
-alert(`You got `  +correctAnswers + ` Correct!`);
+alert(`You got `  +correctAnswers + ` answers correct!`);
 
 // let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
 // let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
