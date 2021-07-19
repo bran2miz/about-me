@@ -146,10 +146,10 @@ while (guessUser) {
   }
 }
 
-// let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
-// let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
-// let rightAnswers= (allQuestions / answerKey);
-// alert(`Your score for this quiz is` + rightAnswers);
+let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
+let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
+let rightAnswers= (allQuestions / answerKey);
+alert(`Your score for this quiz is` + rightAnswers);
 
 // let ouput = [];
 
