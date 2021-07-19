@@ -2,11 +2,11 @@
 
 let correctAnswers= 0;
 
-// // The user's name from the greeting!
-// let username= prompt(`Might I inquire your name?`);
+// The user's name from the greeting!
+let username= prompt(`Might I inquire your name?`);
 
-// // Greet the user
-// alert('Hello ' + username);
+// Greet the user
+alert('Hello ' + username);
 
 let answerOne = prompt(`Welcome to this web page! Is this your first time on this page? Please reply with a yes or no`).toLowerCase();
 
