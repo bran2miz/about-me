@@ -84,7 +84,7 @@ if (answerFive === `yes` || answerFive === `y` || answerFive === `ya`) {
   correctAnswers++;
 }
 
-else if (answerFour === `no` || answerFour === `n`) {
+else if (answerFive === `no` || answerFive === `n`) {
   alert(`You did not like the game...Fine! I will not curse you, but I will make sure that you enjoy my next game!`);
 }
 
@@ -128,36 +128,42 @@ while (guessAttempts) {
     }
   }}
 
-let favDestination = [`paris`, `barcelona`, `cabo`];
-let favWorld = prompt('What is one of my favorite destinations to visit?');
-
+let favDestination = [`PARIS`, `BARCELONA`,`CABO`, `VIENNA`, `ANTWERP`];
+let listOfAnswers = [`PARIS`, `BARCELONA`, `CABO`];
 let guessUser = 6;
 
 while (guessUser) {
-  for (let i = 0; i < guessUser; i++){
-    if (favWorld === favDestination[i]){
-      guessUser = 0;
-      alert(`You're right!`);
-      correctAnswers++;
-      break;
-    } 
-    else if (favWorld !== favDestination[i]){
+  let favWorld = prompt(`What is one of my favorite destinations to visit?\nPossible Answers:\n\n${favDestination[0]}\n${favDestination[1]}\n${favDestination[2]}\n${favDestination[3]}\n${favDestination[4]}\n`);
 
-      alert(`That is not one of my destinations. You have ${guessUser} attempts remaining.`);
-      favWorld = prompt(`Can you try another destination?`);
+  console.log(`answer = ${favWorld}`);
+
+  guessUser--;
+
+  let correct = false;
+
+  for (let i = 0; i < listOfAnswers.length; i++){
+    if (favWorld.toUpperCase() === listOfAnswers[i]){
+      alert(`That's correct. ${listOfAnswers[i]} is one of my favorite destinations!`);
+      correct = true;
+      break;
+    } else {
+      continue;
     }
-    guessUser--;
-    if (guessUser === 0 && favWorld !== favDestination[i]){
-      alert('My favorite destinations are: ' + favDestination);
-    }
+  }
+  if (correct === true) {
+    correctAnswers++;
+    break;
+  }
+  else {
+    alert(`That is not one of my destinations. You have ${guessUser} attempts remaining.`);
   }
 }
 
-alert(`You got `  +correctAnswers + ` answers correct!`);
+alert(`You got `  + correctAnswers + ` answers correct!`);
 
 // let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
 // let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
-// let rightAnswers= (allQuestions / answerKey);
+// let rightAnswers= allQuestions / answerKey);
 // alert(`Your score for this quiz is` + rightAnswers);
 
 
