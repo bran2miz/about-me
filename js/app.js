@@ -1,5 +1,33 @@
-Jae
+ `use strict`;
 
+let correctAnswers= 0;
+
+// The user's name from the greeting!
+let username= prompt(`Might I inquire your name?`);
+
+// Greet the user
+alert('Hello ' + username);
+
+function questionOne(){
+  let answerOne = prompt(`Welcome to this web page! Is this your first time on this page? Please reply with a yes or no`).toLowerCase();
+
+
+  if (answerOne === `yes` || answerOne === `y` || answerOne === `ya`) {
+    alert('Pray tell why you would journey back, mortal.');
+    correctAnswers++;
+  }
+
+  else if (answerOne === 'no' || answerOne === 'n') {
+    alert(`Welcome, Foolish Mortal, to this spooky web page!`);
+  }
+
+  else {
+    alert(`I am sorry, I could not quite catch that. Please respond with a yes or no!`);
+  }
+}
+
+questionOne();
+// // console.log('user replied to question 1 with: ' + answerOne');
 
 function questionTwo(){
   let answerTwo = prompt(`There is no turning back now. Our spooky Q&A begins here! Was the name of the killer in the film, Halloween, named Michael Myers? Mortal! Answer now with a yes or no`).toLowerCase();
@@ -20,21 +48,23 @@ function questionTwo(){
 questionTwo();
 // // console.log('user replied to question 2 with: ' + answerTwo');
 
+function questionThree(){
+  let answerThree = prompt(`Hmm...that was just a warmup question. This is a bunch of hocus pocus... Speaking of which, mortal, did Bette Midler portray the character, Winifred Sanderson, in the movie, Hocus Pocus? Reply with yes or no`).toLowerCase();
 
-let answerThree = prompt(`Hmm...that was just a warmup question. This is a bunch of hocus pocus... Speaking of which, mortal, did Bette Midler portray the character, Winifred Sanderson, in the movie, Hocus Pocus? Reply with yes or no`).toLowerCase();
+  if (answerThree === `yes` || answerThree === `y` || answerThree === `ya`) {
+    alert(`Correct! Well, what do you know. Third time really is the charm`);
+    correctAnswers++;
+  }
 
-if (answerThree === `yes` || answerThree === `y` || answerThree === `ya`) {
-  alert(`Correct! Well, what do you know. Third time really is the charm`);
-  correctAnswers++;
+  else if (answerThree === 'no' || answerThree === 'n') {
+    alert(`Incorrect! Horror, you are not very well versed, because you are cursed!`);
+  }
+
+  else {
+    alert(`Mortal! Again, please enter a viable answer! yes or no!`);
+  }
 }
-
-else if (answerThree === 'no' || answerThree === 'n') {
-  alert(`Incorrect! Horror, you are not very well versed, because you are cursed!`);
-}
-
-else {
-  alert(`Mortal! Again, please enter a viable answer! yes or no!`);
-}
+questionThree();
 
 // // console.log('user replied to question 3 with: ' + answerThree');
 
