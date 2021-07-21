@@ -1,49 +1,25 @@
-//  `use strict`;
-
-let correctAnswers= 0;
-
-// The user's name from the greeting!
-let username= prompt(`Might I inquire your name?`);
-
-// Greet the user
-alert('Hello ' + username);
-
-function questionOne(){
-  let answerOne = prompt(`Welcome to this web page! Is this your first time on this page? Please reply with a yes or no`).toLowerCase();
+Jae
 
 
-  if (answerOne === `yes` || answerOne === `y` || answerOne === `ya`) {
-    alert('Pray tell why you would journey back, mortal.');
+function questionTwo(){
+  let answerTwo = prompt(`There is no turning back now. Our spooky Q&A begins here! Was the name of the killer in the film, Halloween, named Michael Myers? Mortal! Answer now with a yes or no`).toLowerCase();
+
+  if (answerTwo === 'yes' || answerTwo === 'y' || answerTwo === `ya`) {
+    alert(`Well, well. You are correct. Begginer luck I suppose.`);
     correctAnswers++;
   }
 
-  else if (answerOne === 'no' || answerOne === 'n') {
-    alert(`Welcome, Foolish Mortal, to this spooky web page!`);
+  else if (answerTwo === `no` || answerTwo === `n`) {
+    alert(`Wrong Perhaps you are more foolish than I thought!`);
   }
 
   else {
-    alert(`I am sorry, I could not quite catch that. Please respond with a yes or no!`);
+    alert('Mortal! Please enter a viable answer! yes or no!');
   }
 }
-
-// // console.log('user replied to question 1 with: ' + answerOne');
-
-let answerTwo = prompt(`There is no turning back now. Our spooky Q&A begins here! Was the name of the killer in the film, Halloween, named Michael Myers? Mortal! Answer now with a yes or no`).toLowerCase();
-
-if (answerTwo === 'yes' || answerTwo === 'y' || answerTwo === `ya`) {
-  alert(`Well, well. You are correct. Begginer luck I suppose.`);
-  correctAnswers++;
-}
-
-else if (answerTwo === `no` || answerTwo === `n`) {
-  alert(`Wrong Perhaps you are more foolish than I thought!`);
-}
-
-else {
-  alert('Mortal! Please enter a viable answer! yes or no!');
-}
-
+questionTwo();
 // // console.log('user replied to question 2 with: ' + answerTwo');
+
 
 let answerThree = prompt(`Hmm...that was just a warmup question. This is a bunch of hocus pocus... Speaking of which, mortal, did Bette Midler portray the character, Winifred Sanderson, in the movie, Hocus Pocus? Reply with yes or no`).toLowerCase();
 
