@@ -144,36 +144,39 @@ function questionSix(){
 }
 questionSix();
 
-let favDestination = [`PARIS`, `BARCELONA`,`CABO`, `VIENNA`, `ANTWERP`];
-let listOfAnswers = [`PARIS`, `BARCELONA`, `CABO`];
-let guessUser = 6;
+function questionSeven(){
+  let favDestination = [`PARIS`, `BARCELONA`,`CABO`, `VIENNA`, `ANTWERP`];
+  let listOfAnswers = [`PARIS`, `BARCELONA`, `CABO`];
+  let guessUser = 6;
 
-while (guessUser) {
-  let favWorld = prompt(`What is one of my favorite destinations to visit?\nPossible Answers:\n\n${favDestination[0]}\n${favDestination[1]}\n${favDestination[2]}\n${favDestination[3]}\n${favDestination[4]}\n`);
+  while (guessUser) {
+    let favWorld = prompt(`What is one of my favorite destinations to visit?\nPossible Answers:\n\n${favDestination[0]}\n${favDestination[1]}\n${favDestination[2]}\n${favDestination[3]}\n${favDestination[4]}\n`);
 
-  console.log(`answer = ${favWorld}`);
+    console.log(`answer = ${favWorld}`);
 
-  guessUser--;
+    guessUser--;
 
-  let correct = false;
+    let correct = false;
 
-  for (let i = 0; i < listOfAnswers.length; i++){
-    if (favWorld.toUpperCase() === listOfAnswers[i]){
-      alert(`That's correct. ${listOfAnswers[i]} is one of my favorite destinations!`);
-      correct = true;
+    for (let i = 0; i < listOfAnswers.length; i++){
+      if (favWorld.toUpperCase() === listOfAnswers[i]){
+        alert(`That's correct. ${listOfAnswers[i]} is one of my favorite destinations!`);
+        correct = true;
+        break;
+      } else {
+        continue;
+      }
+    }
+    if (correct === true) {
+      correctAnswers++;
       break;
-    } else {
-      continue;
+    }
+    else {
+      alert(`That is not one of my destinations. You have ${guessUser} attempts remaining.`);
     }
   }
-  if (correct === true) {
-    correctAnswers++;
-    break;
-  }
-  else {
-    alert(`That is not one of my destinations. You have ${guessUser} attempts remaining.`);
-  }
 }
+questionSeven();
 
 alert(`You got `  + correctAnswers + ` answers correct!`);
 
