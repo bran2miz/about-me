@@ -106,39 +106,43 @@ function questionFive(){
 questionFive();
 // //console.log('user replied to question 5 with: ' + answerFive');
 
-let correctAnswer = 7;
-let userGuess = +prompt('Fortune Teller: I Am Thinking of a Number Between 1-10. Please Enter Your Guess Should You Dare...');
+function questionSix(){
+  let correctAnswer = 7;
+  let userGuess = +prompt('Fortune Teller: I Am Thinking of a Number Between 1-10. Please Enter Your Guess Should You Dare...');
 
-let guessAttempts = 3;
-let attempts = 3;
+  let guessAttempts = 3;
+  let attempts = 3;
 
-while (guessAttempts) {
-  for (let i = 0; i < attempts; i++){
-    console.log(`i: ${i}`);
-    console.log(`gueessAttempts: ${guessAttempts}`);
-    if (userGuess === correctAnswer){
-      guessAttempts = 0;
-      alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
-      correctAnswers++;
-      break;
+  while (guessAttempts) {
+    for (let i = 0; i < attempts; i++){
+      console.log(`i: ${i}`);
+      console.log(`gueessAttempts: ${guessAttempts}`);
+      if (userGuess === correctAnswer){
+        guessAttempts = 0;
+        alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
+        correctAnswers++;
+        break;
+      }
+      else if (userGuess < correctAnswer){
+        alert(`Fortune Teller: Hmm..no..too low..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
+        userGuess = +prompt(`Please enter another number`);
+      }
+      else if (userGuess > correctAnswer){
+        userGuess = +prompt(`Can you try another number?`);
+        alert(`Fortune Teller: Hmm..your number is too great..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
+      }
+      guessAttempts--;
+      if (guessAttempts === 0 && userGuess !== correctAnswer){
+        alert(`Fortune Teller: The correct answer was ` + correctAnswer);
+      }
+      else if (userGuess === correctAnswer) {
+        alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
+        correctAnswers++;
+      }
     }
-    else if (userGuess < correctAnswer){
-      alert(`Fortune Teller: Hmm..no..too low..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
-      userGuess = +prompt(`Please enter another number`);
-    }
-    else if (userGuess > correctAnswer){
-      userGuess = +prompt(`Can you try another number?`);
-      alert(`Fortune Teller: Hmm..your number is too great..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
-    }
-    guessAttempts--;
-    if (guessAttempts === 0 && userGuess !== correctAnswer){
-      alert(`Fortune Teller: The correct answer was ` + correctAnswer);
-    }
-    else if (userGuess === correctAnswer) {
-      alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
-      correctAnswers++;
-    }
-  }}
+  }
+}
+questionSix();
 
 let favDestination = [`PARIS`, `BARCELONA`,`CABO`, `VIENNA`, `ANTWERP`];
 let listOfAnswers = [`PARIS`, `BARCELONA`, `CABO`];
