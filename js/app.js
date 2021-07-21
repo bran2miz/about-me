@@ -68,22 +68,25 @@ questionThree();
 
 // // console.log('user replied to question 3 with: ' + answerThree');
 
-let answerFour = prompt(`Nearing the end of our questions. Halloween...Did this holiday originate in Ireland? Reply with yes or no`).toLowerCase();
+function questionFour(){
+  let answerFour = prompt(`Nearing the end of our questions. Halloween...Did this holiday originate in Ireland? Reply with yes or no`).toLowerCase();
 
-if (answerFour === `yes` || answerFour === `y` || answerFour === `ya`) {
-  alert(`Correct! Im assuming you are well versed in all that is spooky and scary`);
-  correctAnswers++;
+  if (answerFour === `yes` || answerFour === `y` || answerFour === `ya`) {
+    alert(`Correct! Im assuming you are well versed in all that is spooky and scary`);
+    correctAnswers++;
+  }
+
+  else if (answerFour === `no` || answerFour === `n`) {
+    alert(`Incorrect! You are having bad luck with these questions...`);
+  }
+
+  else {
+    alert(`Mortal! Please enter a viable answer! yes or no!`);
+  }
 }
-
-else if (answerFour === `no` || answerFour === `n`) {
-  alert(`Incorrect! You are having bad luck with these questions...`);
-}
-
-else {
-  alert(`Mortal! Please enter a viable answer! yes or no!`);
-}
-
+questionFour();
 // // console.log('user replied to question 4 with: ' + answerFour');
+
 
 let answerFive = prompt(`Well our questions end here with this last one. Answer wisely....Was this game enjoyable? Reply with yes or no`).toLowerCase();
 
