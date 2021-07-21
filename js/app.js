@@ -87,22 +87,23 @@ function questionFour(){
 questionFour();
 // // console.log('user replied to question 4 with: ' + answerFour');
 
+function questionFive(){
+  let answerFive = prompt(`Well our questions end here with this last one. Answer wisely....Was this game enjoyable? Reply with yes or no`).toLowerCase();
 
-let answerFive = prompt(`Well our questions end here with this last one. Answer wisely....Was this game enjoyable? Reply with yes or no`).toLowerCase();
+  if (answerFive === `yes` || answerFive === `y` || answerFive === `ya`) {
+    alert(`Phew! Mortal, I am glad I did not have to curse you! Thank you for answering correctly! Have a pleasant life! Goodbye for now....`);
+    correctAnswers++;
+  }
 
-if (answerFive === `yes` || answerFive === `y` || answerFive === `ya`) {
-  alert(`Phew! Mortal, I am glad I did not have to curse you! Thank you for answering correctly! Have a pleasant life! Goodbye for now....`);
-  correctAnswers++;
+  else if (answerFive === `no` || answerFive === `n`) {
+    alert(`You did not like the game...Fine! I will not curse you, but I will make sure that you enjoy my next game!`);
+  }
+
+  else {
+    alert(`This is the end of the game! Please enter a viable answer! yes or no!`);
+  }
 }
-
-else if (answerFive === `no` || answerFive === `n`) {
-  alert(`You did not like the game...Fine! I will not curse you, but I will make sure that you enjoy my next game!`);
-}
-
-else {
-  alert(`This is the end of the game! Please enter a viable answer! yes or no!`);
-}
-
+questionFive();
 // //console.log('user replied to question 5 with: ' + answerFive');
 
 let correctAnswer = 7;
