@@ -178,8 +178,11 @@ function questionSeven(){
 }
 questionSeven();
 
-alert(`You got `  + correctAnswers + ` answers correct!`);
+function questionEight(){
+  alert(`You got `  + correctAnswers + ` answers correct!`);
+}
 
+questionEight();
 // let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
 // let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
 // let rightAnswers= allQuestions / answerKey);
