@@ -8,20 +8,22 @@ let username= prompt(`Might I inquire your name?`);
 // Greet the user
 alert('Hello ' + username);
 
-let answerOne = prompt(`Welcome to this web page! Is this your first time on this page? Please reply with a yes or no`).toLowerCase();
+function questionOne(){
+  let answerOne = prompt(`Welcome to this web page! Is this your first time on this page? Please reply with a yes or no`).toLowerCase();
 
 
-if (answerOne === `yes` || answerOne === `y` || answerOne === `ya`) {
-  alert('Pray tell why you would journey back, mortal.');
-  correctAnswers++;
-}
+  if (answerOne === `yes` || answerOne === `y` || answerOne === `ya`) {
+    alert('Pray tell why you would journey back, mortal.');
+    correctAnswers++;
+  }
 
-else if (answerOne === 'no' || answerOne === 'n') {
-  alert(`Welcome, Foolish Mortal, to this spooky web page!`);
-}
+  else if (answerOne === 'no' || answerOne === 'n') {
+    alert(`Welcome, Foolish Mortal, to this spooky web page!`);
+  }
 
-else {
-  alert(`I am sorry, I could not quite catch that. Please respond with a yes or no!`);
+  else {
+    alert(`I am sorry, I could not quite catch that. Please respond with a yes or no!`);
+  }
 }
 
 // // console.log('user replied to question 1 with: ' + answerOne');
