@@ -2,10 +2,8 @@
 
 let correctAnswers= 0;
 
-// The user's name from the greeting!
 let username= prompt(`Might I inquire your name?`);
 
-// Greet the user
 alert('Hello ' + username);
 
 function questionOne(){
@@ -27,7 +25,6 @@ function questionOne(){
 }
 
 questionOne();
-// // console.log('user replied to question 1 with: ' + answerOne');
 
 function questionTwo(){
   let answerTwo = prompt(`There is no turning back now. Our spooky Q&A begins here! Was the name of the killer in the film, Halloween, named Michael Myers? Mortal! Answer now with a yes or no`).toLowerCase();
@@ -46,7 +43,6 @@ function questionTwo(){
   }
 }
 questionTwo();
-// // console.log('user replied to question 2 with: ' + answerTwo');
 
 function questionThree(){
   let answerThree = prompt(`Hmm...that was just a warmup question. This is a bunch of hocus pocus... Speaking of which, mortal, did Bette Midler portray the character, Winifred Sanderson, in the movie, Hocus Pocus? Reply with yes or no`).toLowerCase();
@@ -66,8 +62,6 @@ function questionThree(){
 }
 questionThree();
 
-// // console.log('user replied to question 3 with: ' + answerThree');
-
 function questionFour(){
   let answerFour = prompt(`Nearing the end of our questions. Halloween...Did this holiday originate in Ireland? Reply with yes or no`).toLowerCase();
 
@@ -85,7 +79,6 @@ function questionFour(){
   }
 }
 questionFour();
-// // console.log('user replied to question 4 with: ' + answerFour');
 
 function questionFive(){
   let answerFive = prompt(`Well our questions end here with this last one. Answer wisely....Was this game enjoyable? Reply with yes or no`).toLowerCase();
@@ -104,7 +97,6 @@ function questionFive(){
   }
 }
 questionFive();
-// //console.log('user replied to question 5 with: ' + answerFive');
 
 function questionSix(){
   let correctAnswer = 7;
@@ -115,8 +107,6 @@ function questionSix(){
 
   while (guessAttempts) {
     for (let i = 0; i < attempts; i++){
-      console.log(`i: ${i}`);
-      console.log(`gueessAttempts: ${guessAttempts}`);
       if (userGuess === correctAnswer){
         guessAttempts = 0;
         alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
@@ -152,8 +142,6 @@ function questionSeven(){
   while (guessUser) {
     let favWorld = prompt(`What is one of my favorite destinations to visit?\nPossible Answers:\n\n${favDestination[0]}\n${favDestination[1]}\n${favDestination[2]}\n${favDestination[3]}\n${favDestination[4]}\n`);
 
-    console.log(`answer = ${favWorld}`);
-
     guessUser--;
 
     let correct = false;
@@ -183,17 +171,4 @@ function questionEight(){
 }
 
 questionEight();
-// let allQuestions = [answerOne, answerTwo, answerThree, answerFour, answerFive, userGuess, favWorld];
-// let answerKey = [('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`),('yes','y',`ya`), 7,(`paris`, `barcelona`, `cabo`)];
-// let rightAnswers= allQuestions / answerKey);
-// alert(`Your score for this quiz is` + rightAnswers);
 
-
-
-// let ouput = [];
-
-// let answers;
-
-// for(let i = 0; i< questions.length; i++){
-
-// }
