@@ -118,8 +118,8 @@ function questionSix(){
         userGuess = +prompt(`Please enter another number`);
       }
       else if (userGuess > correctAnswer){
-        userGuess = +prompt(`Can you try another number?`);
         alert(`Fortune Teller: Hmm..your number is too great..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
+        userGuess = +prompt(`Can you try another number?`);
       }
       guessAttempts--;
       if (guessAttempts === 0 && userGuess !== correctAnswer){
