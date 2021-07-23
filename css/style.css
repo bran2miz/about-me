@@ -11,6 +11,14 @@ body {
   padding-right: 20px;
 }
 
+.monet {
+  width:500px;
+  height: 300px;
+  float: left;
+  padding-right: 20px;
+  clear:both;
+}
+
 h1 {
   font-style: oblique;
   color: blueviolet;
@@ -57,6 +65,25 @@ h1 {
   align-items: center;
   clear: both;
   text-align: center;
+}
+
+.thirdsection {
+  font-style: oblique;
+  color: blueviolet;
+  font-size: 30px;
+  margin: 1rem;
+  background-color: beige;
+  border-color: cadetblue;
+  border-style: outset;
+  border-width: thick;
+  padding: 10px 100px 30px 100px;
+  height: 100%;
+  align-items: center;
+  clear: both;
+  text-align: center;
+  float: right;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .destination {
