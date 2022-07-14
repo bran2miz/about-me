@@ -62,9 +62,10 @@ h1 {
   padding: 10px 10px 10px 10px;
   height: 100%;
   list-style: decimal;
-  align-items: center;
+  flex-direction: row;
   clear: both;
   text-align: center;
+  flex-wrap:wrap;
 }
 
 .thirdsection {
@@ -78,7 +79,7 @@ h1 {
   border-width: thick;
   padding: 10px 100px 30px 100px;
   height: 100%;
-  align-items: center;
+  flex-direction: row;
   clear: both;
   text-align: center;
   float: right;
@@ -112,4 +113,9 @@ li {
 
 h2 {
   text-align: center;
+}
+
+.secondsection .thirdsection {
+  flex-direction:row;
+  flex-wrap:wrap;
 }

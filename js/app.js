@@ -100,32 +100,51 @@ questionFive();
 
 function questionSix(){
   let correctAnswer = 7;
+  // first this is the actual answer
   let userGuess = +prompt('Fortune Teller: I Am Thinking of a Number Between 1-10. Please Enter Your Guess Should You Dare...');
+  // using a prompt the user will input their answer which will be saved into userGuess
 
   let guessAttempts = 3;
+  // amount of the guess attempts
   let attempts = 3;
+  // attempts left
 
   while (guessAttempts) {
+  // while there are guessAttempts left
     for (let i = 0; i < attempts; i++){
+    // using a for loop with the amount of attempts still left
       if (userGuess === correctAnswer){
         guessAttempts = 0;
         alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
         correctAnswers++;
+        // user gets it right and then set the guess attempts to 0 (since it was guessed correctly)
+        // correctAnswers is added to the counter
         break;
+        // code breaks and while loops ends
       }
       else if (userGuess < correctAnswer){
+        //conditional if the guess is less than the answer
         alert(`Fortune Teller: Hmm..no..too low..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
+        // alert the user and give them the remaining guess attempts left using template literals
         userGuess = +prompt(`Please enter another number`);
+        // prompt the user to input and guess again
       }
       else if (userGuess > correctAnswer){
+        // conditional if the user's guess is larger than the answer
         alert(`Fortune Teller: Hmm..your number is too great..Would you like to try again? You have ${guessAttempts} attempts remaining.`);
+        // alert user that it is too large and provide the remaining guess attempts left using the template literals
         userGuess = +prompt(`Can you try another number?`);
+        // prompt the user to input and guess again
       }
       guessAttempts--;
+      // this will decrement all the guessAttempts by 1
       if (guessAttempts === 0 && userGuess !== correctAnswer){
+        // conditional if there are no guessAttempts left and the user's guess does not equate to the correct answer
         alert(`Fortune Teller: The correct answer was ` + correctAnswer);
+        // tell the correct answer with an alert
       }
       else if (userGuess === correctAnswer) {
+      // right answer conditional solves an issue that exits out of program if they guess correctly (because the correct answer conditional was only written in the beginning and not the end) 
         alert(`Fortune Teller: Wait..ARE YOU A MIND READER?!! You got it right!`);
         correctAnswers++;
       }

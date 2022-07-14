@@ -1,13 +1,5 @@
 # LAB - 02
 
-## About Me, with a guessing game
-
-I built an HTML page with a Guessing Game. The guessing game contains true or false questions relating to my life. 
-
-### Author: Brandon Mizutani
-
-### Links and Resources
-* [Reset.CSS Code](https://meyerweb.com/eric/tools/css/reset/)
 
 ### Reflections and Comments
 The ways in which I hope to evaluate and plan my learning:
